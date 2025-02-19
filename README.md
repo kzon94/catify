@@ -6,14 +6,15 @@
 2. [Características](#características)
 3. [Requisitos](#requisitos)
 4. [Configuración](#configuración)
-5. [Uso](#uso)
-6. [Contribución](#contribución)
-7. [Licencia](#licencia)
-8. [Contacto](#contacto)
+5. [Uso en Google Colab](#uso-en-google-colab)
+6. [Instalación en local](#instalación-en-local)
+7. [Contribución](#contribución)
+8. [Licencia](#licencia)
+9. [Contacto](#contacto)
 
 ## Descripción
 
-Catify es una aplicación en Python que permite generar listas de reproducción en Spotify con recomendaciones musicales basadas en Last.fm. Además, agrega una imagen de portada temática de gatos a la playlist, utilizando imágenes obtenidas de CATAAS.
+Catify es una aplicación en Python que permite generar listas de reproducción en Spotify con recomendaciones musicales basadas en Last.fm. Se utiliza la API de Last.fm para obtener artistas relacionados, ya que, desde el 27 de noviembre, Spotify ha restringido el acceso a varios endpoints y funcionalidades de su Web API para nuevas aplicaciones y aquellas en desarrollo que aún no han sido lanzadas. Esto incluye la generación de contenido relacionado, por lo que no es posible obtener artistas similares directamente desde Spotify. Además, agrega una imagen de portada de michis a la playlist, utilizando imágenes obtenidas de CATAAS.
 
 ## Características
 
@@ -47,23 +48,47 @@ SPOTIFY_REDIRECT_URI = "https://example.org/callback"
 LASTFM_API_KEY = "TU_LASTFM_API_KEY"
 ```
 
-## Uso
+**Nota:** En la API de Spotify, la URL de redirección (`SPOTIFY_REDIRECT_URI`) debe configurarse en `https://example.org/callback` si se ejecuta en Google Colab, ya que esta plataforma no permite el uso de `localhost`. Sin embargo, si se ejecuta en un entorno local, se puede utilizar `http://localhost:8888/callback` u otra URL válida en lugar de `example.org`.
 
-Ejecutar el script principal con:
+## Uso en Google Colab
 
-```bash
-python catify.py
+Catify está diseñado para ejecutarse en Google Colab sin necesidad de configuración adicional. Para ejecutarlo en Colab:
+
+1. Abre Google Colab.
+2. Sube el archivo `.ipynb` desde GitHub o tu equipo.
+3. Ejecuta todas las celdas siguiendo las instrucciones del notebook.
+
+También puedes clonar el repositorio directamente en Colab usando:
+
+```python
+!git clone https://github.com/tu-usuario/tu-repositorio.git
+%cd tu-repositorio
+!pip install -r requirements.txt
 ```
 
-### Flujo de ejecución
+## Instalación en local
 
-1. Autenticación en Spotify.
-2. Búsqueda de una canción y obtención de recomendaciones.
-3. Generación de un archivo CSV con las recomendaciones.
-4. Creación de una nueva playlist en Spotify.
-5. Adición de las canciones recomendadas a la playlist.
-6. Generación de una imagen de portada con CATAAS.
-7. Subida de la imagen como portada de la playlist.
+Si prefieres ejecutar Catify en tu entorno local (por ejemplo, en Visual Studio Code), sigue estos pasos:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   cd tu-repositorio
+   ```
+2. Crea un entorno virtual (opcional pero recomendado):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # En macOS/Linux
+   venv\Scripts\activate  # En Windows
+   ```
+3. Instala las dependencias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Ejecuta el script principal:
+   ```bash
+   python catify.py
+   ```
 
 ## Contribución
 
