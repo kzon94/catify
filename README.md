@@ -14,7 +14,9 @@
 
 ## Descripción
 
-Catify es una aplicación en Python que permite generar listas de reproducción en Spotify con recomendaciones musicales basadas en Last.fm. Se utiliza la API de Last.fm para obtener artistas relacionados, ya que, desde el 27 de noviembre, Spotify ha restringido el acceso a varios endpoints y funcionalidades de su Web API para nuevas aplicaciones y aquellas en desarrollo que aún no han sido lanzadas. Esto incluye la generación de contenido relacionado, por lo que no es posible obtener artistas similares directamente desde Spotify. Además, agrega una imagen de portada de michis a la playlist, utilizando imágenes obtenidas de CATAAS.
+Catify es una aplicación en Python que permite generar listas de reproducción en Spotify con recomendaciones musicales basadas en Last.fm. Además, agrega una imagen de portada temática de gatos a la playlist, utilizando imágenes obtenidas de CATAAS.
+
+Repositorio oficial: [GitHub - kzon94/catify](https://github.com/kzon94/catify)
 
 ## Características
 
@@ -22,7 +24,7 @@ Catify es una aplicación en Python que permite generar listas de reproducción 
 - Búsqueda de canciones y artistas en Last.fm.
 - Generación de un archivo CSV con recomendaciones musicales.
 - Creación de una playlist en Spotify con las canciones recomendadas.
-- Generación y subida automática de una imagen de portada.
+- Generación y subida automática de una imagen de portada con temática de gatos.
 
 ## Requisitos
 
@@ -42,13 +44,13 @@ Además, se deben configurar credenciales en Spotify y Last.fm:
 Antes de ejecutar el script, se deben definir las siguientes variables de entorno:
 
 ```python
-SPOTIFY_CLIENT_ID = "TU_CLIENT_ID"
-SPOTIFY_CLIENT_SECRET = "TU_CLIENT_SECRET"
+SPOTIFY_CLIENT_ID = "TU_SPOTIFY_CLIENT_ID"
+SPOTIFY_CLIENT_SECRET = "TU_SPOTIFY_CLIENT_SECRET"
 SPOTIFY_REDIRECT_URI = "https://example.org/callback"
 LASTFM_API_KEY = "TU_LASTFM_API_KEY"
 ```
 
-**Nota:** En la API de Spotify, la URL de redirección (`SPOTIFY_REDIRECT_URI`) debe configurarse en `https://example.org/callback` si se ejecuta en Google Colab, ya que esta plataforma no permite el uso de `localhost`. Sin embargo, si se ejecuta en un entorno local, se puede utilizar `http://localhost:8888/callback` u otra URL válida en lugar de `example.org`.
+**Nota:** En la API de Spotify, la URL de redirección (`SPOTIFY_REDIRECT_URI`) debe configurarse en `https://example.org/callback` si se ejecuta en Google Colab, ya que esta plataforma no permite el uso de `localhost`. Si se ejecuta en un entorno local, se puede utilizar `http://localhost:8888/callback`.
 
 ## Uso en Google Colab
 
@@ -61,8 +63,8 @@ Catify está diseñado para ejecutarse en Google Colab sin necesidad de configur
 También puedes clonar el repositorio directamente en Colab usando:
 
 ```python
-!git clone https://github.com/tu-usuario/tu-repositorio.git
-%cd tu-repositorio
+!git clone https://github.com/kzon94/catify.git
+%cd catify
 !pip install -r requirements.txt
 ```
 
@@ -72,8 +74,8 @@ Si prefieres ejecutar Catify en tu entorno local (por ejemplo, en Visual Studio 
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd tu-repositorio
+   git clone https://github.com/kzon94/catify.git
+   cd catify
    ```
 2. Crea un entorno virtual (opcional pero recomendado):
    ```bash
@@ -107,4 +109,3 @@ Este proyecto está bajo la licencia MIT. Consultar el archivo `LICENSE` para m�
 ## Contacto
 
 Para dudas o sugerencias, abrir un issue o contactar al desarrollador.
-
