@@ -1,4 +1,4 @@
-# Catify
+# Catify 🐱
 
 ## Índice
 
@@ -26,7 +26,7 @@ Repositorio oficial: [GitHub - kzon94/catify](https://github.com/kzon94/catify)
 - Búsqueda de canciones y artistas en Last.fm.
 - Generación de un archivo CSV con recomendaciones musicales.
 - Creación de una playlist en Spotify con las canciones recomendadas.
-- Generación y subida automática de una imagen de portada con temática de gatos.
+- Generación y subida automática de una imagen de portada con mininos.
 
 ## Requisitos
 
@@ -56,13 +56,7 @@ LASTFM_API_KEY = "TU_LASTFM_API_KEY"
 
 ## Uso en Google Colab
 
-Catify está diseñado para ejecutarse en Google Colab sin necesidad de configuración adicional. Para ejecutarlo en Colab:
-
-1. Abre Google Colab.
-2. Sube el archivo `.ipynb` desde GitHub o tu equipo.
-3. Ejecuta todas las celdas siguiendo las instrucciones del notebook.
-
-También puedes clonar el repositorio directamente en Colab usando:
+Catify está diseñado para ejecutarse en Google Colab sin necesidad de configuración adicional. Para ejecutarlo en Colab, puedes clonar el repositorio directamente en Colab usando:
 
 ```python
 !git clone https://github.com/kzon94/catify.git
@@ -74,7 +68,7 @@ También puedes clonar el repositorio directamente en Colab usando:
 
 Si prefieres ejecutar Catify en tu entorno local (por ejemplo, en Visual Studio Code), sigue estos pasos:
 
-1. Clona el repositorio:
+1. Clona o descarga el repositorio:
    ```bash
    git clone https://github.com/kzon94/catify.git
    cd catify
