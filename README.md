@@ -14,7 +14,7 @@
 
 ## Descripción
 
-Catify es una aplicación en Python que permite generar listas de reproducción en Spotify con recomendaciones musicales basadas en Last.fm. Además, agrega una imagen de portada temática de gatos a la playlist, utilizando imágenes obtenidas de CATAAS.
+Catify es una aplicación en Python que permite generar listas de reproducción en Spotify con recomendaciones musicales basadas en Last.fm. Dado que desde el 27 de noviembre Spotify ha restringido el acceso a varios endpoints de su Web API para nuevas aplicaciones y aquellas en desarrollo que aún no han sido lanzadas, la búsqueda de recomendaciones de canciones y artistas relacionados se realiza exclusivamente a través de la API de Last.fm. Además, Catify agrega una imagen de portada temática de gatos a la playlist, utilizando imágenes obtenidas de CATAAS.
 
 Repositorio oficial: [GitHub - kzon94/catify](https://github.com/kzon94/catify)
 
@@ -109,3 +109,4 @@ Este proyecto está bajo la licencia MIT. Consultar el archivo `LICENSE` para m�
 ## Contacto
 
 Para dudas o sugerencias, abrir un issue o contactar al desarrollador.
+
