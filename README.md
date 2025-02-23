@@ -1,6 +1,6 @@
 # Catify 🐱
 
-![Logo de Catify](logo.png)
+![Logo de Catify](logo.jpg)
 
 ## Índice
 
