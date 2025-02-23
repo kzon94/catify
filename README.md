@@ -1,5 +1,7 @@
 # Catify 🐱
 
+![Logo de Catify](logo.png)
+
 ## Índice
 
 1. [Descripción](#descripción)
