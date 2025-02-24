@@ -12,7 +12,8 @@
 6. [Instalación en local](#instalación-en-local)
 7. [Contribución](#contribución)
 8. [Licencia](#licencia)
-9. [Contacto](#contacto)
+9. [Autor](#autor)
+10. [Contacto](#contacto)
 
 ## Descripción
 
@@ -103,6 +104,11 @@ Las contribuciones son bienvenidas. Para colaborar, seguir estos pasos:
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Consultar el archivo `LICENSE` para más detalles.
+
+## Autor
+
+- **Nombre**: Victor Belinchón
+- **Contacto**: vbelinchonperez@gmail.com
 
 ## Contacto
 
